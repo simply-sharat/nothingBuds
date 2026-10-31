@@ -1,0 +1,26 @@
+{
+    "$schema": "https://github.com/AvengeMedia/DankMaterialShell/raw/refs/heads/master/PLUGINS/plugin-schema.json",
+    "id": "nothingBuds",
+    "name": "Nothing Buds",
+    "description": "Bar widget for Nothing / CMF audio devices: battery, active noise control, EQ, spatial audio and low-latency, driven by nothingctl.",
+    "version": "1.0.0",
+    "author": "spadmanabhan",
+    "license": "MIT",
+    "icon": "headphones",
+    "type": "composite",
+    "capabilities": [
+        "daemon",
+        "dankbar-widget"
+    ],
+    "components": {
+        "daemon": "./NothingBudsDaemon.qml",
+        "widget": "./NothingBuds.qml"
+    },
+    "settings": "./NothingBudsSettings.qml",
+    "requires_dms": ">=2.0.0",
+    "permissions": [
+        "settings_read",
+        "settings_write",
+        "process"
+    ]
+}
